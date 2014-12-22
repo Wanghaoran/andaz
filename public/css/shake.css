@@ -1,0 +1,72 @@
+@charset "utf-8";
+/*public*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0; border:0;}
+body,button,input,select,textarea{font:12px/1.6  "\5FAE\8F6F\96C5\9ED1";}/*5FAE\8F6F\96C5\9ED1  Verdana, Helvetica, sans-serif*/
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+address,cite,dfn,em,var{font-style:normal;}
+code,kbd,pre,samp{font-family:courier new,courier,monospace;}
+small{font-size:12px;}
+ul,ol,li{list-style:none;}
+a:link,a:visited{color:#898989;text-decoration:none;}
+a:hover,a:active{color:#898989;text-decoration:none;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+legend{color:#000;}
+fieldset,img{border:0;}
+button,input,select,textarea{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+input{outline: none;}/* �����ı������ */
+textarea {outline: none;} 
+a{text-decoration:none;color:#333;outline:none;}
+a:hover{text-decoration:none;color:#F40;outline:none;}
+/* ���?�� */
+.clear:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clear {zoom:1; /* for IE6 IE7 */}
+.clear2{ clear:both; height:2px;}
+.clear5{ clear:both; height:5px;}
+.clear6{ clear:both; height:6px;}
+.clear10{ clear:both; height:10px;}
+.clear20{ clear:both; height:20px;}
+.clear30{ clear:both; height:30px;}
+.clear40{ clear:both; height:40px;}
+.fl{ float:left;}
+
+.contain{min-width:320px; max-width:640px;margin:0 auto; width:100%; height:auto}
+	.home{ width:100%; position:relative}
+	.home img{ width:100%; vertical-align:bottom;}
+		.home .row{ width:10.78%; top:43%; right:5%; position:absolute; z-index:2;}
+		.home .row a{ display:inline-block;}
+		.home .row a img{ width:100%; vertical-align:bottom; border:none;}
+		
+	.jiangpin{ width:100%; position:relative}
+	.jiangpin img{ width:100%; vertical-align:bottom;}
+		.jpbox{ width:93.75%; position:absolute; left:3.125%; top:7.39%; z-index:2;}
+		.jpbox .jpimg{ width:76.5%; position:absolute; left:11.75%; top:9.25%; z-index:3;}
+		.jpbox .jpbtn{width:76.5%; position:absolute; left:11.75%; bottom:9%; z-index:3;}
+		.jpbox .jpbtn a{ float:left; width:32%; margin:0 2% 0 0;}
+		.jpbox .jpbtn a.last{ margin:0 0 0 0;}
+		.jpbox .jpbtn a img{ border:none;}
+	
+	.start{ width:100%; position:relative}
+		.start img{ width:100%; vertical-align:bottom;}
+		.jing{ position:absolute; left:0; top:0;}
+		.dong{ position:absolute; left:0; top:0;z-index:9999}
+		
+.mydiv1{ position:absolute; min-width:320px; max-width:640px; width:93.75%; left:3.125%; top:29%; z-index:9; display:none; position:fixed;}
+.mydiv1 img{ width:100%; vertical-align:bottom;}
+.mydiv1 a.close1{ position:absolute; z-index:9999; width:8%; height:12.5%; top:10%; right:8.2%; display:inline-block;}
+.mydiv1 .infobox{ position:absolute; z-index:9999; width:36%; height:24%; left:31%; top:38%;}
+.mydiv1 .infobox ul{ width:100%; height:100%;}
+.mydiv1 .infobox ul li{ width:100%; height:40%; margin:0 0 5% 0;}
+.mydiv1 .infobox ul li input{ background:none; border:none; width:100%; height:100%; line-height:100%;}
+.mydiv1 .infobox ul li input.inputclass1{}
+.mydiv1 .infobox ul li input.inputclass2{ margin:5% 0 0 0;}
+
+.mydiv2{ position:absolute; min-width:320px; max-width:640px; width:93.75%; left:3.125%;  top:29%; z-index:9; display:none;  position:fixed;}
+.mydiv2 img{ width:100%; vertical-align:bottom}
+.mydiv2 a.close2{ position:absolute; z-index:9999; width:8%; height:12.5%; top:10%; right:8.2%; display:inline-block;}
+
+.mydiv3{ position:absolute; min-width:320px; max-width:640px; width:93.75%; left:3.125%; top:15%; z-index:9; display:none;  position:fixed;}
+.mydiv3 img{ width:100%; vertical-align:bottom}
+.mydiv3 a.close3{ position:absolute; z-index:9999; width:8%; height:7%; top:6.3%; right:8.2%; display:inline-block;}
+
