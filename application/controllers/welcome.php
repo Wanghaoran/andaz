@@ -30,8 +30,6 @@ class Welcome extends CI_Controller {
          * 6  巧克力酥饼/蔓越莓饼干           数量：6
          * 7  肉桂星星饼干                   数量：6
          * 8  圣诞球甜品                     数量：6
-
-         *
          *
          */
 
@@ -86,8 +84,6 @@ class Welcome extends CI_Controller {
 
         //填充数组至2万
         $gift_arr = array_pad($gift_arr, 20000, 0);
-
-        var_dump($gift_arr);
 
         $data = array();
         $data['gift'] = $gift_arr[array_rand($gift_arr)];
