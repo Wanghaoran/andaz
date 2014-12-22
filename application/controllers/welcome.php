@@ -37,8 +37,6 @@ class Welcome extends CI_Controller {
 
         $this -> load -> model('gift_model');
 
-
-
         //每个奖品剩余数量
         $gift_1 = 1 - $this -> gift_model -> getgiftnum(1);
         $gift_2 = 2 - $this -> gift_model -> getgiftnum(2);
@@ -49,17 +47,48 @@ class Welcome extends CI_Controller {
         $gift_7 = 6 - $this -> gift_model -> getgiftnum(7);
         $gift_8 = 6 - $this -> gift_model -> getgiftnum(8);
 
-        var_dump($gift_1);
-        var_dump($gift_2);
-        var_dump($gift_3);
-        var_dump($gift_4);
-        var_dump($gift_5);
-        var_dump($gift_6);
-        var_dump($gift_7);
-        var_dump($gift_8);
+
+        //生成奖池
+        $gift_arr = array();
+
+        //添加奖品1
+        for($i = 0; $i < $gift_1; $i ++){
+            $gift_arr[] = 1;
+        }
+        //添加奖品2
+        for($i = 0; $i < $gift_2; $i ++){
+            $gift_arr[] = 2;
+        }
+        //添加奖品3
+        for($i = 0; $i < $gift_3; $i ++){
+            $gift_arr[] = 3;
+        }
+        //添加奖品4
+        for($i = 0; $i < $gift_4; $i ++){
+            $gift_arr[] = 4;
+        }
+        //添加奖品5
+        for($i = 0; $i < $gift_5; $i ++){
+            $gift_arr[] = 5;
+        }
+        //添加奖品6
+        for($i = 0; $i < $gift_6; $i ++){
+            $gift_arr[] = 6;
+        }
+        //添加奖品7
+        for($i = 0; $i < $gift_7; $i ++){
+            $gift_arr[] = 7;
+        }
+        //添加奖品8
+        for($i = 0; $i < $gift_8; $i ++){
+            $gift_arr[] = 8;
+        }
+
+        var_dump($gift_arr);
+
 
         $data = array();
-        $data['gift'] = 7;
+        $data['gift'] = $gift_arr[array_rand($gift_arr)];
 
         if($data['gift'] != 0){
 
