@@ -4,18 +4,39 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('index');
+
+        //非移动设备直接推出
+        $this->load->library('user_agent');
+        if(!$this->agent->is_mobile()){
+            die();
+        }
+        $this->load->view('index');
 	}
 
     public function sales(){
+        //非移动设备直接推出
+        $this->load->library('user_agent');
+        if(!$this->agent->is_mobile()){
+            die();
+        }
         $this->load->view('sales');
     }
 
     public function start(){
+        //非移动设备直接推出
+        $this->load->library('user_agent');
+        if(!$this->agent->is_mobile()){
+            die();
+        }
         $this->load->view('start');
     }
 
     public function result(){
+        //非移动设备直接推出
+        $this->load->library('user_agent');
+        if(!$this->agent->is_mobile()){
+            die();
+        }
         //生成奖品
 
         /*
