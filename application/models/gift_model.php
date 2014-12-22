@@ -16,9 +16,10 @@ class Gift_model extends CI_Model {
     }
 
     //记录中奖信息
-    public function writegift($gift){
+    public function writegift($gift, $agent){
         $data = array(
             'gift' => $gift,
+            'user_agent' => $agent,
             'time' => date('Y-m-d H:i:s'),
         );
 

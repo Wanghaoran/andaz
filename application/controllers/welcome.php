@@ -38,12 +38,12 @@ class Welcome extends CI_Controller {
         $this -> load -> model('gift_model');
 
         $data = array();
-        $data['gift'] = 8;
+        $data['gift'] = 7;
 
         if($data['gift'] != 0){
 
             //纪录中奖
-            $this -> gift_model -> writegift($data['gift']);
+            $this -> gift_model -> writegift($data['gift'], $_SERVER['HTTP_USER_AGENT']);
 
         }
 
