@@ -37,6 +37,27 @@ class Welcome extends CI_Controller {
 
         $this -> load -> model('gift_model');
 
+
+
+        //每个奖品剩余数量
+        $gift_1 = 1 - $this -> gift_model -> getgiftnum(1);
+        $gift_2 = 2 - $this -> gift_model -> getgiftnum(2);
+        $gift_3 = 2 - $this -> gift_model -> getgiftnum(3);
+        $gift_4 = 6 - $this -> gift_model -> getgiftnum(4);
+        $gift_5 = 6 - $this -> gift_model -> getgiftnum(5);
+        $gift_6 = 6 - $this -> gift_model -> getgiftnum(6);
+        $gift_7 = 6 - $this -> gift_model -> getgiftnum(7);
+        $gift_8 = 6 - $this -> gift_model -> getgiftnum(8);
+
+        var_dump($gift_1);
+        var_dump($gift_2);
+        var_dump($gift_3);
+        var_dump($gift_4);
+        var_dump($gift_5);
+        var_dump($gift_6);
+        var_dump($gift_7);
+        var_dump($gift_8);
+
         $data = array();
         $data['gift'] = 7;
 
