@@ -24,6 +24,35 @@
             });
         });
     </script>
+
+    <script type="text/javascript">
+        var shareData = {
+            "img_url": "http://182.92.64.207/andaz/public/images/img.jpg",
+            "img_width": "200",
+            "img_height": "200",
+            "link": "http://elle.cnhtk.cn/friend?uid=<?=$this->session->userdata('elle_wechat_id')?>",
+            "desc":  "摇一摇 赢大奖 #ShakeYourANdAZTree #GetYourFabPrize",
+            "title": "摇一摇 赢大奖 #ShakeYourANdAZTree #GetYourFabPrize"
+        };
+        document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+            WeixinJSBridge.call('hideToolbar');
+
+            WeixinJSBridge.on('menu:share:timeline', function () {
+                shareData.title = "摇一摇 赢大奖 #ShakeYourANdAZTree #GetYourFabPrize";
+                WeixinJSBridge.invoke('shareTimeline',shareData, function (res) {
+                    _report('send_msg', res.err_msg);
+                });
+            });
+
+            //发送给好友
+            WeixinJSBridge.on('menu:share:appmessage', function () {
+                shareData.title = "摇一摇 赢大奖 #ShakeYourANdAZTree #GetYourFabPrize";
+                WeixinJSBridge.invoke('sendAppMessage', shareData, function (res) {
+                    _report('send_msg', res.err_msg);
+                })
+            });
+        }, false);
+    </script>
 </head>
 <body>
 <audio src="<?=$this->config->base_url()?>public/music/1.mp3" autoplay="autoplay" loop="loop">
