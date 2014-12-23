@@ -51,6 +51,8 @@
 </head>
 
 <body>
+<audio src="<?=$this->config->base_url()?>public/music/1.mp3" autoplay="autoplay" loop="loop">
+</audio>
 <!--pop start-->
 <!--
 <div id="popDiv1" class="mydiv1">
