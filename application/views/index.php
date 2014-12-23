@@ -68,7 +68,7 @@
 <div class="contain">
     <div class="home">
         <img src="<?=$this->config->base_url()?>/public/images/home.jpg"/>
-        <div class="row"><a href="<?=$this->config->base_url()?>sales"><img src="<?=$this->config->base_url()?>/public/images/row.gif"/></a></div>
+        <div class="row"><a href="<?=$this->config->base_url()?>sales"><img src="<?=$this->config->base_url()?>/public/images/row.png"/></a></div>
     </div>
 </div>
 <div style="display: none;">
