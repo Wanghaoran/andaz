@@ -23,10 +23,17 @@
                 flakeheightandwidth:30 // if you are mention that option flakesize is 2 then this flakeheightandwidth should work values are in pixels 16*16.
             });
         });
+
+
+        $(document).on('touchstart', function() {
+            document.getElementById("audios").load();
+            document.getElementById("audios").play();
+        })
+
     </script>
 </head>
 <body>
-<audio src="<?=$this->config->base_url()?>public/music/1.mp3" autoplay="autoplay" loop="loop">
+<audio src="<?=$this->config->base_url()?>public/music/1.mp3" id="audios" loop="loop">
     您的浏览器不支持音频播放！
 </audio>
 <!--雪花-->
