@@ -27,6 +27,8 @@
     </script>
 </head>
 <body>
+<audio src="<?=$this->config->base_url()?>public/music/2.mp3" autoplay="autoplay" loop="loop">
+</audio>
 <!--雪花-->
 <div class="drop"></div>
 <div class="contain">
