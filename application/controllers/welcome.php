@@ -4,11 +4,7 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-//非移动设备直接推出
-        $this->load->library('user_agent');
-        if(!$this->agent->is_mobile()){
-            die();
-        }
+
 
         $this->load->view('index');
 	}
