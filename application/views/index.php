@@ -25,23 +25,21 @@
         });
 
 
-        $(document).on('touchstart', function() {
-            document.getElementById("audios").load();
-//            document.getElementById("audios").play();
-        })
-
     </script>
+    <script src="http://www.dodoca.com/www/mobile/mods/js/music.js?v=1.3" type="text/javascript"></script>
 </head>
 <body>
-<audio src="<?=$this->config->base_url()?>public/music/1.mp3" id="audios" autoplay="autoplay" loop="loop">
-    您的浏览器不支持音频播放！
-</audio>
+
+<div class="on" url="http://wx.yihudong.cn/weixin/Glee-Cast-Jingle-Bell-Rock.mp3" id="audio_btn" style="display: block;">
+    <audio autoplay="" id="media" src="http://wx.yihudong.cn/weixin/Glee-Cast-Jingle-Bell-Rock.mp3" loop=""></audio>
+</div>
+
 <!--雪花-->
 <div class="drop"></div>
 <div class="contain">
     <div class="home">
         <img src="<?=$this->config->base_url()?>/public/images/home.jpg"/>
-        <div class="row"><a href="<?=$this->config->base_url()?>sales"><img src="<?=$this->config->base_url()?>/public/images/row.png"/></a></div>
+        <div class="row"><a href="<?=$this->config->base_url()?>sales"><img src="<?=$this->config->base_url()?>/public/images/row.gif"/></a></div>
     </div>
 </div>
 <div style="display: none;">
