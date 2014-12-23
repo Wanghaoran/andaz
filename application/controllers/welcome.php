@@ -103,7 +103,9 @@ class Welcome extends CI_Controller {
         $gift_arr = array_pad($gift_arr, 20000, 0);
 
         $data = array();
-        $data['gift'] = $gift_arr[array_rand($gift_arr)];
+//        $data['gift'] = $gift_arr[array_rand($gift_arr)];
+
+        $data['gift'] = 3;
 
         if($data['gift'] != 0){
 

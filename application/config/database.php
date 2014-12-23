@@ -48,9 +48,9 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'ylhd1234!';
+$db['default']['hostname'] = 'rdsqaqmemuunamz.mysql.rds.aliyuncs.com';
+$db['default']['username'] = 'hyatt';
+$db['default']['password'] = 'jilexingqiu';
 $db['default']['database'] = 'andaz';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = 'andaz_';
