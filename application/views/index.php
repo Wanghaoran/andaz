@@ -30,8 +30,8 @@
 </head>
 <body>
 
-<div class="on" url="http://wx.yihudong.cn/weixin/Glee-Cast-Jingle-Bell-Rock.mp3" id="audio_btn" style="display: block;">
-    <audio autoplay="" id="media" src="http://wx.yihudong.cn/weixin/Glee-Cast-Jingle-Bell-Rock.mp3" loop=""></audio>
+<div class="on" url="<?=$this->config->base_url()?>public/music/1.mp3" id="audio_btn" style="display: block;">
+    <audio autoplay="" id="media" src="<?=$this->config->base_url()?>public/music/1.mp3" loop=""></audio>
 </div>
 
 <!--雪花-->
