@@ -4,7 +4,11 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-
+//非移动设备直接推出
+        $this->load->library('user_agent');
+        if(!$this->agent->is_mobile()){
+            die();
+        }
 
         $this->load->view('index');
 	}
@@ -103,9 +107,9 @@ class Welcome extends CI_Controller {
         $gift_arr = array_pad($gift_arr, 20000, 0);
 
         $data = array();
-//        $data['gift'] = $gift_arr[array_rand($gift_arr)];
+        $data['gift'] = $gift_arr[array_rand($gift_arr)];
 
-        $data['gift'] = 3;
+//        $data['gift'] = 3;
 
         if($data['gift'] != 0){
 
