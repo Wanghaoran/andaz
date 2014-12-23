@@ -41,7 +41,7 @@ function deviceMotionHandler(eventData) {
 //
 //	var gamer=document.getElementById("game-start-water");
 //	var gamertext=document.getElementById("shaketext01");
-            $('#audios').play();
+            document.createElement("audios").play();
 
 	var dh=document.getElementById("dh");
 	//gamertext.style.cssText = "display:none;";
