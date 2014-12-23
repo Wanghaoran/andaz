@@ -54,7 +54,7 @@
             "img_url": "http://182.92.64.207/andaz/public/images/img.jpg",
             "img_width": "200",
             "img_height": "200",
-            "link": "http://elle.cnhtk.cn/friend?uid=<?=$this->session->userdata('elle_wechat_id')?>",
+            "link": "http://182.92.64.207/andaz/",
             "desc":  "摇一摇 赢大奖 #ShakeYourANdAZTree #GetYourFabPrize",
             "title": "摇一摇 赢大奖 #ShakeYourANdAZTree #GetYourFabPrize"
         };
