@@ -27,6 +27,7 @@
 </head>
 <body>
 <audio src="<?=$this->config->base_url()?>public/music/1.mp3" autoplay="autoplay" loop="loop">
+    您的浏览器不支持音频播放！
 </audio>
 <!--雪花-->
 <div class="drop"></div>
