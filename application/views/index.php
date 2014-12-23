@@ -27,13 +27,13 @@
 
         $(document).on('touchstart', function() {
             document.getElementById("audios").load();
-            document.getElementById("audios").play();
+//            document.getElementById("audios").play();
         })
 
     </script>
 </head>
 <body>
-<audio src="<?=$this->config->base_url()?>public/music/1.mp3" id="audios" loop="loop">
+<audio src="<?=$this->config->base_url()?>public/music/1.mp3" id="audios" autoplay="autoplay" loop="loop">
     您的浏览器不支持音频播放！
 </audio>
 <!--雪花-->
