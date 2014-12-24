@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Andaz Xmas 小游戏</title>
+    <title>#ShakeYourANAdZTree#</title>
     <meta http-equiv="Cache-Control" content="max-age=3600">
     <meta name="MobileOptimized" content="240">
     <meta name="apple-touch-fullscreen" content="YES">
